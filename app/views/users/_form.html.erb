@@ -1,0 +1,12 @@
+<%= form_with(model: @user, local: true) do |form| %>
+
+    <h5>Username:</h5>
+    <%= form.text_field(:username, {:class => 'form-control'})  %><br>
+    <h5>Password:</h5>
+    <%= form.text_field(:password, {:class => 'form-control'}) %><br>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
